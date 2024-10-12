@@ -1,4 +1,6 @@
-代码来源于https://github.com/coffeehat/BIT-srun-login-script，在此基础上增加了**acid校正**和**Windows用户登录自启动脚本**两个说明模块
+代码来源于https://github.com/coffeehat/BIT-srun-login-script，
+
+在此基础上增加了**acid校正**和**Windows用户登录自启动脚本**两个说明模块
 
 
 
