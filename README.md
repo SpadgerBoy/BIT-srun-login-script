@@ -58,13 +58,13 @@ nohup python always_online.py &
 
 4.将BitSrunLogin\LoginManager.py中的acid改为自己对应的值即可。
 
-![image-20241012104032486](assets/acid.png)
+![](assets/acid.png)
 
 # Windows用户登录自启动脚本：
 
 1. 打开**任务计划程序**，**创建基本任务**
 
-![image-20241012102100131](assets/p1.png)
+![](assets/p1.png)
 
 2.填写触发器执行逻辑
 
@@ -80,10 +80,10 @@ nohup python always_online.py &
 
 完成后关机再重启电脑。
 
-![image-20241012102325173](assets/p2.png)
+![](assets/p2.png)
 
-![image-20241012102349599](assets/p3.png)
+![](assets/p3.png)
 
-![image-20241012102654410](assets/p4.png)
+![](assets/p4.png)
 
-![image-20241012102734660](assets/p5.png)
+![](assets/p5.png)
