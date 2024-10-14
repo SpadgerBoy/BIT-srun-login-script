@@ -4,6 +4,8 @@
 
 
 
+
+
 加密逻辑来自（目前404了）：https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
 
 另有支持多平台（包括openwrt）的golang版本，请见：https://github.com/Mmx233/BitSrunLoginGo
@@ -50,15 +52,25 @@ nohup python always_online.py &
 
 如何查看自己的acid：
 
-1.在10.0.0.55注销校园网，将python代码中的acid设置为1
+1.进入10.0.0.55校园网页面
 
-2.运行always_online.py脚本，连接上校园网。此时如果你不能正常打开其他网页，说明你的校园网acid不是1.
+2.F12进入开发者模式，查看元素。如下图，可以看到自己的acid，我的是8。
 
-3.再次点开一个新的10.0.0.55网页，F12进入开发者模式，查看元素。如下图，可以看到自己的acid，我的是8。
-
-4.将BitSrunLogin\LoginManager.py中的acid改为自己对应的值即可。
+3.将BitSrunLogin\LoginManager.py中的acid改为自己对应的值即可。
 
 ![](assets/acid.png)
+
+```python
+def __init__(self,
+	url_login_page = "http://10.0.0.55/srun_portal_pc?ac_id=8&theme=bit",
+	url_get_challenge_api = "http://10.0.0.55/cgi-bin/get_challenge",
+	url_login_api = "http://10.0.0.55/cgi-bin/srun_portal",
+	n = "200",
+	vtype = "1",
+	acid = "8",
+	enc = "srun_bx1"
+):
+```
 
 # Windows用户登录自启动脚本：
 
